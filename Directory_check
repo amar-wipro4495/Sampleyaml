@@ -1,0 +1,11 @@
+--- 
+- 
+  become: true
+  hosts: localhost
+  name: "ansible operations on files"
+  tasks: 
+    - 
+      file: 
+        path: $home/c.txt
+        state: directory
+      name: "ansible ensuring directory exists"
